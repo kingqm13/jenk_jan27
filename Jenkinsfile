@@ -21,6 +21,12 @@ pipeline {
            }
         }
        
+       stage('Deploy'){
+           steps {
+               echo 'Deploy Step'
+           }
+        }
+       
        stage('Docker'){
            steps { 
                echo 'Image Step'
