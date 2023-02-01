@@ -11,14 +11,20 @@ pipeline {
        
        stage('Build'){
            steps {
-               echo 'Hello Build'
-               sleep 10
+               echo 'Build Step'
+           }
+        }
+       
+       stage('Test'){
+           steps {
+               echo 'Test Step'
+               sleep
            }
         }
        
        stage('Docker'){
            steps { 
-               echo 'Hey Docker'
+               echo 'Image Step'
                sleep 10
            }
        }
