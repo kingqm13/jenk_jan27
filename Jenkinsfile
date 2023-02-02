@@ -12,7 +12,7 @@ pipeline {
            steps {
                 sh 'mvn clean'
                 sh 'mvn install'
-                sh 'maven package'
+                sh 'mvn package'
            }
         }
 
